@@ -1,0 +1,10 @@
+C:\Users\HOME\source\repos\proclinica\proclinica\obj\Debug\proclinica.csproj.AssemblyReference.cache
+C:\Users\HOME\source\repos\proclinica\proclinica\obj\Debug\proclinica.UserControl1.resources
+C:\Users\HOME\source\repos\proclinica\proclinica\obj\Debug\proclinica.csproj.GenerateResource.cache
+C:\Users\HOME\source\repos\proclinica\proclinica\obj\Debug\proclinica.csproj.CoreCompileInputs.cache
+C:\Users\HOME\source\repos\proclinica\proclinica\bin\Debug\proclinica.dll
+C:\Users\HOME\source\repos\proclinica\proclinica\bin\Debug\proclinica.pdb
+C:\Users\HOME\source\repos\proclinica\proclinica\bin\Debug\Guna.UI2.dll
+C:\Users\HOME\source\repos\proclinica\proclinica\obj\Debug\proclinica.csproj.Up2Date
+C:\Users\HOME\source\repos\proclinica\proclinica\obj\Debug\proclinica.dll
+C:\Users\HOME\source\repos\proclinica\proclinica\obj\Debug\proclinica.pdb
