@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -48,6 +48,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_DoctorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DoctorMenu.Designer.cs">
+      <DependentUpon>Form_DoctorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_prueba.Designer.cs">
+      <DependentUpon>Form_prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegistrarPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegistrarPacientes.Designer.cs">
+      <DependentUpon>Form_RegistrarPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegistrarRecepcionistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegistrarRecepcionistas.Designer.cs">
+      <DependentUpon>Form_RegistrarRecepcionistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_VerPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_VerPacientes.Designer.cs">
+      <DependentUpon>Form_VerPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_VerRecepcionistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_VerRecepcionistas.Designer.cs">
+      <DependentUpon>Form_VerRecepcionistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestorPacientes.cs" />
+    <Compile Include="GestorRecepcionistas.cs" />
+    <Compile Include="recepcionistas-mainmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recepcionistas-mainmenu.Designer.cs">
+      <DependentUpon>recepcionistas-mainmenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -58,6 +102,27 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form_DoctorMenu.resx">
+      <DependentUpon>Form_DoctorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_prueba.resx">
+      <DependentUpon>Form_prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegistrarPacientes.resx">
+      <DependentUpon>Form_RegistrarPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegistrarRecepcionistas.resx">
+      <DependentUpon>Form_RegistrarRecepcionistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_VerPacientes.resx">
+      <DependentUpon>Form_VerPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_VerRecepcionistas.resx">
+      <DependentUpon>Form_VerRecepcionistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recepcionistas-mainmenu.resx">
+      <DependentUpon>recepcionistas-mainmenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>

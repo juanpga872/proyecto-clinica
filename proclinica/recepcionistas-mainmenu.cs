@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace proclinica
+{
+    public partial class recepcionistas_mainmenu : Form
+    {
+        public recepcionistas_mainmenu()
+        {
+            InitializeComponent();
+        }
+
+        private void Btn_Registrarpacientes_recepcionista_Click(object sender, EventArgs e)
+        {
+            Form_RegistrarPacientes registrar = new Form_RegistrarPacientes();
+            registrar.Show();
+            this.Hide();
+        }
+
+        private void Btn_Verpacientes_recepcionista_Click(object sender, EventArgs e)
+        {
+            Form_VerPacientes ver = new Form_VerPacientes();
+            ver.Show();
+            this.Hide();
+        }
+
+        private void Btn_volver_recepcionista_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+
+            Form menu = new Form_DoctorMenu();
+            menu.Show();
+        }
+    }
+}
+
