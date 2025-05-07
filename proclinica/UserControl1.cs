@@ -44,6 +44,36 @@ namespace proclinica
                 AdminMenu adminMenu = new AdminMenu();
                 adminMenu.Show();
             }
+            if(usuario=="recepcionista" && contraseña == "1234")
+            {
+            
+                MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Hide();
+
+                recepcionistas_mainmenu menu = new recepcionistas_mainmenu();
+
+         
+                menu.Show();
+            }
+            if (usuario == "doctor" && contraseña == "1234")
+            {
+                MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Hide();
+
+                Form_DoctorMenu menu = new Form_DoctorMenu();
+                menu.Show();
+            }
+            if(usuario== "prueba" && contraseña == "1234")
+            {
+                MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide(); 
+
+                Form_prueba menuAdmin = new Form_prueba(); // Este será el "menú del super admin"
+                menuAdmin.Show();
+                return;
+            }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
