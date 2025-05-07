@@ -21,3 +21,4 @@ C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\bin\Debug\proclinica.dll
 C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\bin\Debug\proclinica.pdb
 C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\bin\Debug\Guna.UI2.dll
 C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.csproj.Up2Date
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.AgendarCita.resources

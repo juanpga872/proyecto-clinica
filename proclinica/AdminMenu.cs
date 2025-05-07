@@ -34,5 +34,13 @@ namespace proclinica
             this.Hide();
 
         }
+
+        private void btnAgendarCita_Click(object sender, EventArgs e)
+        {
+            AgendarCita agendarCita = new AgendarCita();
+            agendarCita.Show();
+            this.Hide();
+
+        }
     }
 }
