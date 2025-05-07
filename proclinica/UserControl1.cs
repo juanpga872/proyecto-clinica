@@ -33,11 +33,16 @@ namespace proclinica
             string usuario = correo_txt.Text;
             string contraseña = contraseña_txt.Text;
 
-            
             if (usuario == "admin" && contraseña == "1234")
             {
                 MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide(); 
+
+                
+                Form formularioPrincipal = this.FindForm();
+                formularioPrincipal.Hide();
+
+                AdminMenu adminMenu = new AdminMenu();
+                adminMenu.Show();
             }
             else
             {
