@@ -64,12 +64,43 @@ namespace proclinica
 
         private void Btn_volver_recepcionista_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            if (GestorUsuarios.UsuarioActual != null)
+            {
+                string rolActual = GestorUsuarios.UsuarioActual.Rol;
 
-            Form_prueba menuAdmin = new Form_prueba(); 
-            menuAdmin.Show();
-            
+                switch (rolActual)
+                {
+                    case "Recepcionista":
+
+                        new recepcionistas_mainmenu().Show();
+                        break;
+                    case "SuperAdmin":
+
+                        new Form_prueba().Show();
+                        break;
+
+                    case "Administrador":
+                        new AdminMenu().Show();
+                        break;
+
+                    case "Doctor":
+                        new Form_DoctorMenu().Show();
+                        break;
+
+                    default:
+
+                        MessageBox.Show("No se definió una ventana de regreso para este rol.", "Error de Navegación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+                        break;
+                }
+
+
+                this.Hide();
+            }
+
         }
+        
     }
     
 }

@@ -15,6 +15,7 @@ namespace proclinica
         public Form_VerRecepcionistas()
         {
             InitializeComponent();
+            this.dataGridViewRecepcionistas.DataError += dataGridViewRecepcionistas_DataError;
             CargarRecepcionistas();
         }
 
@@ -30,6 +31,11 @@ namespace proclinica
                 dataGridViewRecepcionistas.DataSource = null;
                 dataGridViewRecepcionistas.DataSource = GestorRecepcionistas.ListaRecepcionista;
             }
+        }
+        private void dataGridViewRecepcionistas_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            // Cancelamos el error silenciosamente
+            e.ThrowException = false;
         }
 
         private void dataGridViewRecepcionistas_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -55,20 +61,42 @@ namespace proclinica
             dataGridViewRecepcionistas.DataSource = resultados;
         }
 
-        private void Btn_volver_Click(object sender, EventArgs e)
-        {
-            recepcionistas_mainmenu menu = new recepcionistas_mainmenu();
-            menu.Show();
-            this.Hide();
-        }
-
         private void Btn_volver_Click_1(object sender, EventArgs e)
         {
-       
-            Form_prueba menuAdmin = new Form_prueba(); // Este será el "menú del super admin"
-            menuAdmin.Show();
-            this.Hide();
+            if (GestorUsuarios.UsuarioActual != null)
+            {
+                string rolActual = GestorUsuarios.UsuarioActual.Rol;
 
+                switch (rolActual)
+                {
+                    case "Recepcionista":
+
+                        new recepcionistas_mainmenu().Show();
+                        break;
+                    case "SuperAdmin":
+
+                        new Form_prueba().Show();
+                        break;
+
+                    case "Administrador":
+                        new AdminMenu().Show();
+                        break;
+
+                    case "Doctor":
+                        new Form_DoctorMenu().Show();
+                        break;
+
+                    default:
+
+                        MessageBox.Show("No se definió una ventana de regreso para este rol.", "Error de Navegación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+                        break;
+                }
+
+
+                this.Hide();
+            }
         }
     }
 }

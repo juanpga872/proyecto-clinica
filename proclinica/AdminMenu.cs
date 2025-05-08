@@ -42,5 +42,31 @@ namespace proclinica
             this.Hide();
 
         }
+
+        private void Btnregistrarsecretarios_admin_Click(object sender, EventArgs e)
+        {
+            Form_RegistrarRecepcionistas registrar = new Form_RegistrarRecepcionistas();
+            registrar.Show();
+        }
+
+        private void Btn_versecretarios_admin_Click(object sender, EventArgs e)
+        {
+            Form_VerRecepcionistas ver = new Form_VerRecepcionistas();
+            ver.Show();
+        }
+
+        private void btn_registrarpacientes_admin_Click(object sender, EventArgs e)
+        {
+            Form_RegistrarPacientes registrar = new Form_RegistrarPacientes();
+            registrar.Show();
+            this.Hide();
+        }
+
+        private void btn_verpacientes_admin_Click(object sender, EventArgs e)
+        {
+            Form_VerPacientes ver = new Form_VerPacientes();
+            ver.Show();
+            this.Hide();
+        }
     }
 }
