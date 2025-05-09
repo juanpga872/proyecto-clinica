@@ -95,6 +95,7 @@
             this.Btn_Agendarcitas_recepcionistas.Size = new System.Drawing.Size(127, 36);
             this.Btn_Agendarcitas_recepcionistas.TabIndex = 3;
             this.Btn_Agendarcitas_recepcionistas.Text = "Agendar Citas";
+            this.Btn_Agendarcitas_recepcionistas.Click += new System.EventHandler(this.Btn_Agendarcitas_recepcionistas_Click);
             // 
             // Btn_Verpacientes_recepcionista
             // 

@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,12 +63,13 @@
     <Compile Include="BaseDatosSimulada.cs" />
     <Compile Include="Cita.cs" />
     <Compile Include="Doctor.cs" />
+    <Compile Include="GestorUsuarios.cs" />
     <Compile Include="RegistroDoctores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroDoctores.Designer.cs">
       <DependentUpon>RegistroDoctores.cs</DependentUpon>
-=======
+    </Compile>
     <Compile Include="Form_DoctorMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,7 +113,6 @@
     </Compile>
     <Compile Include="recepcionistas-mainmenu.Designer.cs">
       <DependentUpon>recepcionistas-mainmenu.cs</DependentUpon>
->>>>>>> origin/juanacevedo
     </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
@@ -131,7 +130,6 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,7 +138,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroDoctores.resx">
       <DependentUpon>RegistroDoctores.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_DoctorMenu.resx">
       <DependentUpon>Form_DoctorMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,7 +159,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="recepcionistas-mainmenu.resx">
       <DependentUpon>recepcionistas-mainmenu.cs</DependentUpon>
->>>>>>> origin/juanacevedo
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>

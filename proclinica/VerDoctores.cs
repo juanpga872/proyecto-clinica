@@ -29,13 +29,45 @@ namespace proclinica
 
         private void btnVolverAtras_Click(object sender, EventArgs e)
         {
-            //aqui funcion para volver al AdminMenu
-            this.Hide();
-            AdminMenu adminMenu = new AdminMenu();
-            adminMenu.Show();
+            if (GestorUsuarios.UsuarioActual != null)
+            {
+                string rolActual = GestorUsuarios.UsuarioActual.Rol;
 
+                switch (rolActual)
+                {
+                    case "Recepcionista":
+
+                        new recepcionistas_mainmenu().Show();
+                        break;
+                    case "SuperAdmin":
+
+                        new Form_prueba().Show();
+                        break;
+
+                    case "Administrador":
+                        new AdminMenu().Show();
+                        break;
+
+                    case "Doctor":
+                        new Form_DoctorMenu().Show();
+                        break;
+
+                    default:
+
+                        MessageBox.Show("No se definió una ventana de regreso para este rol.", "Error de Navegación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+                        break;
+                }
+
+
+                this.Hide();
+            }
 
         }
+
+
+        
 
         private void VerDoctores_Load(object sender, EventArgs e)
         {

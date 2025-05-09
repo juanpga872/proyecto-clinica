@@ -15,6 +15,7 @@ namespace proclinica
         public Form_VerPacientes()
         {
             InitializeComponent();
+            this.dataGridViewPacientes.DataError += dataGridViewPacientes_DataError;
             CargarPacientes();
 
         }
@@ -45,6 +46,11 @@ namespace proclinica
                 CargarPacientes();  // Recargar la lista de pacientes
             }
         }
+        private void dataGridViewPacientes_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            // Cancelamos el error silenciosamente
+            e.ThrowException = false;
+        }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
@@ -62,9 +68,41 @@ namespace proclinica
 
         private void Btn_volver_Click(object sender, EventArgs e)
         {
-            recepcionistas_mainmenu menu = new recepcionistas_mainmenu();
-            menu.Show();
-            this.Hide();
+            
+            if (GestorUsuarios.UsuarioActual != null)
+            {
+                string rolActual = GestorUsuarios.UsuarioActual.Rol;
+
+                switch (rolActual)
+                {
+                    case "Recepcionista":
+                        
+                        new recepcionistas_mainmenu().Show();
+                        break;
+                    case "SuperAdmin":
+                    
+                        new Form_prueba().Show();
+                    break;
+
+                    case "Administrador":
+                    new AdminMenu().Show();
+                    break;
+
+                    case "Doctor":
+                    new Form_DoctorMenu().Show();
+                    break;
+
+                    default:
+                      
+                        MessageBox.Show("No se definió una ventana de regreso para este rol.", "Error de Navegación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                 
+ 
+                    break;
+                }
+
+
+                this.Hide(); 
+            }
         }
     }
 }
