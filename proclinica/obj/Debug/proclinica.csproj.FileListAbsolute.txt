@@ -22,3 +22,10 @@ C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\bin\Debug\proclinica.pdb
 C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\bin\Debug\Guna.UI2.dll
 C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.csproj.Up2Date
 C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.AgendarCita.resources
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.Form_DoctorMenu.resources
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.Form_prueba.resources
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.Form_RegistrarPacientes.resources
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.Form_RegistrarRecepcionistas.resources
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.Form_VerPacientes.resources
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.Form_VerRecepcionistas.resources
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.recepcionistas_mainmenu.resources
