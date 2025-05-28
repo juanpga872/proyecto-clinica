@@ -115,9 +115,18 @@ namespace proclinica
                 });
             }
 
-            comboUsuarios.DataSource = listaGeneral;
-            comboUsuarios.DisplayMember = "Descripcion";
-            comboUsuarios.ValueMember = "Documento";
+            if (listaGeneral.Count > 0)
+            {
+                comboUsuarios.DataSource = listaGeneral;
+                comboUsuarios.DisplayMember = "Descripcion";
+                comboUsuarios.ValueMember = "Documento";
+                comboUsuarios.SelectedIndex = 0; // selecciona el primero por defecto
+            }
+            else
+            {
+                comboUsuarios.DataSource = null;
+                MessageBox.Show("No hay usuarios disponibles para asignar un perfil.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         private void CargarRoles()
         {
