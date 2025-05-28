@@ -47,12 +47,14 @@ namespace proclinica
         {
             Form_RegistrarRecepcionistas registrar = new Form_RegistrarRecepcionistas();
             registrar.Show();
+            this.Hide();
         }
 
         private void Btn_versecretarios_admin_Click(object sender, EventArgs e)
         {
             Form_VerRecepcionistas ver = new Form_VerRecepcionistas();
             ver.Show();
+            this.Hide();
         }
 
         private void btn_registrarpacientes_admin_Click(object sender, EventArgs e)
@@ -65,6 +67,20 @@ namespace proclinica
         private void btn_verpacientes_admin_Click(object sender, EventArgs e)
         {
             Form_VerPacientes ver = new Form_VerPacientes();
+            ver.Show();
+            this.Hide();
+        }
+
+        private void btncrearperfil_Click(object sender, EventArgs e)
+        {
+            Form_CrearPerfil ver = new Form_CrearPerfil();
+            ver.Show();
+            this.Hide();
+        }
+
+        private void Btn_volver_Click(object sender, EventArgs e)
+        {
+            FormLogin ver = new FormLogin();
             ver.Show();
             this.Hide();
         }

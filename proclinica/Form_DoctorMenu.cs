@@ -33,12 +33,9 @@ namespace proclinica
 
         private void Btn_volver_doctor_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-            recepcionistas_mainmenu menu = new recepcionistas_mainmenu();
-
-
-            menu.Show();
+           FormLogin ver = new FormLogin();
+           ver.Show();
+           this.Hide();  
         }
 
         private void Btn_Agendarcitas_doctor_Click(object sender, EventArgs e)

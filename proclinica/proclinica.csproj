@@ -63,6 +63,18 @@
     <Compile Include="BaseDatosSimulada.cs" />
     <Compile Include="Cita.cs" />
     <Compile Include="Doctor.cs" />
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CrearPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CrearPerfil.Designer.cs">
+      <DependentUpon>Form_CrearPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestorUsuarios.cs" />
     <Compile Include="RegistroDoctores.cs">
       <SubType>Form</SubType>
@@ -135,6 +147,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgendarCita.resx">
       <DependentUpon>AgendarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CrearPerfil.resx">
+      <DependentUpon>Form_CrearPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroDoctores.resx">
       <DependentUpon>RegistroDoctores.cs</DependentUpon>
