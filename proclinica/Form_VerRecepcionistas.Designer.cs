@@ -45,11 +45,13 @@
             this.Btn_volver.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn_volver.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Btn_volver.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_volver.FillColor = System.Drawing.Color.Red;
             this.Btn_volver.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Btn_volver.ForeColor = System.Drawing.Color.White;
-            this.Btn_volver.Location = new System.Drawing.Point(47, 24);
+            this.Btn_volver.Location = new System.Drawing.Point(63, 30);
+            this.Btn_volver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_volver.Name = "Btn_volver";
-            this.Btn_volver.Size = new System.Drawing.Size(96, 36);
+            this.Btn_volver.Size = new System.Drawing.Size(128, 44);
             this.Btn_volver.TabIndex = 19;
             this.Btn_volver.Text = "volver";
             this.Btn_volver.Click += new System.EventHandler(this.Btn_volver_Click_1);
@@ -58,9 +60,10 @@
             // 
             this.lblbuscar.AutoSize = true;
             this.lblbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbuscar.Location = new System.Drawing.Point(231, 54);
+            this.lblbuscar.Location = new System.Drawing.Point(308, 66);
+            this.lblbuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblbuscar.Name = "lblbuscar";
-            this.lblbuscar.Size = new System.Drawing.Size(59, 20);
+            this.lblbuscar.Size = new System.Drawing.Size(73, 25);
             this.lblbuscar.TabIndex = 18;
             this.lblbuscar.Text = "Buscar";
             // 
@@ -76,11 +79,12 @@
             this.txtBuscar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBuscar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBuscar.Location = new System.Drawing.Point(296, 54);
+            this.txtBuscar.Location = new System.Drawing.Point(395, 66);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.PlaceholderText = "";
             this.txtBuscar.SelectedText = "";
-            this.txtBuscar.Size = new System.Drawing.Size(268, 36);
+            this.txtBuscar.Size = new System.Drawing.Size(357, 44);
             this.txtBuscar.TabIndex = 17;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
@@ -109,10 +113,12 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewRecepcionistas.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewRecepcionistas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridViewRecepcionistas.Location = new System.Drawing.Point(110, 120);
+            this.dataGridViewRecepcionistas.Location = new System.Drawing.Point(147, 148);
+            this.dataGridViewRecepcionistas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewRecepcionistas.Name = "dataGridViewRecepcionistas";
             this.dataGridViewRecepcionistas.RowHeadersVisible = false;
-            this.dataGridViewRecepcionistas.Size = new System.Drawing.Size(644, 307);
+            this.dataGridViewRecepcionistas.RowHeadersWidth = 51;
+            this.dataGridViewRecepcionistas.Size = new System.Drawing.Size(859, 378);
             this.dataGridViewRecepcionistas.TabIndex = 16;
             this.dataGridViewRecepcionistas.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridViewRecepcionistas.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -145,13 +151,14 @@
             // 
             // Form_VerRecepcionistas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.Btn_volver);
             this.Controls.Add(this.lblbuscar);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.dataGridViewRecepcionistas);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form_VerRecepcionistas";
             this.Text = "Form_VerRecepcionistas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecepcionistas)).EndInit();

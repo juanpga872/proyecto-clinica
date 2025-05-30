@@ -43,6 +43,7 @@ namespace proclinica
 
         }
 
+<<<<<<< HEAD
         private void Btnregistrarsecretarios_admin_Click(object sender, EventArgs e)
         {
             Form_RegistrarRecepcionistas registrar = new Form_RegistrarRecepcionistas();
@@ -68,5 +69,55 @@ namespace proclinica
             ver.Show();
             this.Hide();
         }
+=======
+        private void btnVerCita_Click(object sender, EventArgs e)
+        {
+            VerCitas verCitas = new VerCitas();
+            verCitas.Show();
+            this.Hide();
+
+        }
+
+        private void AdminMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Form_RegistrarPacientes registrarPacientes = new Form_RegistrarPacientes();
+            registrarPacientes.Show();
+            this.Hide();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Form_VerPacientes verPacientes = new Form_VerPacientes();
+            verPacientes.Show();
+            this.Hide();
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            Form_RegistrarRecepcionistas form_RegistrarRecepcionistas = new Form_RegistrarRecepcionistas();
+            form_RegistrarRecepcionistas.Show();
+            this.Hide();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Form_VerRecepcionistas form_VerRecepcionistas = new Form_VerRecepcionistas();
+            form_VerRecepcionistas.Show();
+            this.Hide();
+        }
+
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            HistorialPaciente historialPaciente = new HistorialPaciente();
+            historialPaciente.Show();
+            this.Hide();
+
+        }
+>>>>>>> juanpablo/clinic-app
     }
 }

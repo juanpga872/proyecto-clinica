@@ -30,15 +30,21 @@
         {
             this.dateTimeHora = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.txtMotivo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnAgregar = new Guna.UI2.WinForms.Guna2Button();
+            this.DateTimeFecha = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txcPaciente = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txcDoctor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txcConsultorio = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnVolverAtras = new Guna.UI2.WinForms.Guna2Button();
-            this.txcPaciente = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.DateTimeFecha = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.btnAgregar = new Guna.UI2.WinForms.Guna2Button();
-            this.txtMotivo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl1.SuspendLayout();
             this.guna2ContainerControl2.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +67,12 @@
             // 
             // guna2ContainerControl1
             // 
+            this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel3);
+            this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel7);
+            this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel6);
+            this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel5);
+            this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel4);
+            this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2ContainerControl1.Controls.Add(this.txtMotivo);
             this.guna2ContainerControl1.Controls.Add(this.btnAgregar);
             this.guna2ContainerControl1.Controls.Add(this.DateTimeFecha);
@@ -74,6 +86,74 @@
             this.guna2ContainerControl1.Size = new System.Drawing.Size(729, 416);
             this.guna2ContainerControl1.TabIndex = 1;
             this.guna2ContainerControl1.Text = "guna2ContainerControl1";
+            // 
+            // txtMotivo
+            // 
+            this.txtMotivo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMotivo.DefaultText = "";
+            this.txtMotivo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMotivo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMotivo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMotivo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMotivo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMotivo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMotivo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMotivo.Location = new System.Drawing.Point(372, 203);
+            this.txtMotivo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMotivo.Name = "txtMotivo";
+            this.txtMotivo.PlaceholderText = "";
+            this.txtMotivo.SelectedText = "";
+            this.txtMotivo.Size = new System.Drawing.Size(281, 173);
+            this.txtMotivo.TabIndex = 10;
+            this.txtMotivo.TextChanged += new System.EventHandler(this.txtMotivo_TextChanged);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.BorderRadius = 20;
+            this.btnAgregar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(93, 324);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(200, 52);
+            this.btnAgregar.TabIndex = 9;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // DateTimeFecha
+            // 
+            this.DateTimeFecha.Checked = true;
+            this.DateTimeFecha.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.DateTimeFecha.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimeFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateTimeFecha.Location = new System.Drawing.Point(93, 203);
+            this.DateTimeFecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimeFecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimeFecha.Name = "DateTimeFecha";
+            this.DateTimeFecha.Size = new System.Drawing.Size(200, 36);
+            this.DateTimeFecha.TabIndex = 8;
+            this.DateTimeFecha.Value = new System.DateTime(2025, 5, 7, 9, 56, 43, 918);
+            this.DateTimeFecha.ValueChanged += new System.EventHandler(this.DateTimeFecha_ValueChanged);
+            // 
+            // txcPaciente
+            // 
+            this.txcPaciente.BackColor = System.Drawing.Color.Transparent;
+            this.txcPaciente.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txcPaciente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txcPaciente.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txcPaciente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txcPaciente.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txcPaciente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txcPaciente.ItemHeight = 30;
+            this.txcPaciente.Location = new System.Drawing.Point(93, 43);
+            this.txcPaciente.Name = "txcPaciente";
+            this.txcPaciente.Size = new System.Drawing.Size(200, 36);
+            this.txcPaciente.TabIndex = 7;
+            this.txcPaciente.SelectedIndexChanged += new System.EventHandler(this.txcPaciente_SelectedIndexChanged);
             // 
             // txcDoctor
             // 
@@ -101,6 +181,10 @@
             this.txcConsultorio.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txcConsultorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txcConsultorio.ItemHeight = 30;
+            this.txcConsultorio.Items.AddRange(new object[] {
+            "101A",
+            "102B",
+            "103C"});
             this.txcConsultorio.Location = new System.Drawing.Point(372, 113);
             this.txcConsultorio.Name = "txcConsultorio";
             this.txcConsultorio.Size = new System.Drawing.Size(200, 36);
@@ -144,73 +228,66 @@
             this.btnVolverAtras.Text = "volver";
             this.btnVolverAtras.Click += new System.EventHandler(this.btnVolverAtras_Click);
             // 
-            // txcPaciente
+            // guna2HtmlLabel2
             // 
-            this.txcPaciente.BackColor = System.Drawing.Color.Transparent;
-            this.txcPaciente.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txcPaciente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txcPaciente.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txcPaciente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txcPaciente.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txcPaciente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txcPaciente.ItemHeight = 30;
-            this.txcPaciente.Location = new System.Drawing.Point(93, 43);
-            this.txcPaciente.Name = "txcPaciente";
-            this.txcPaciente.Size = new System.Drawing.Size(200, 36);
-            this.txcPaciente.TabIndex = 7;
-            this.txcPaciente.SelectedIndexChanged += new System.EventHandler(this.txcPaciente_SelectedIndexChanged);
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.Window;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(93, 19);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(63, 18);
+            this.guna2HtmlLabel2.TabIndex = 11;
+            this.guna2HtmlLabel2.Text = "Pacientes";
             // 
-            // DateTimeFecha
+            // guna2HtmlLabel4
             // 
-            this.DateTimeFecha.Checked = true;
-            this.DateTimeFecha.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.DateTimeFecha.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DateTimeFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateTimeFecha.Location = new System.Drawing.Point(93, 203);
-            this.DateTimeFecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DateTimeFecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DateTimeFecha.Name = "DateTimeFecha";
-            this.DateTimeFecha.Size = new System.Drawing.Size(200, 36);
-            this.DateTimeFecha.TabIndex = 8;
-            this.DateTimeFecha.Value = new System.DateTime(2025, 5, 7, 9, 56, 43, 918);
-            this.DateTimeFecha.ValueChanged += new System.EventHandler(this.DateTimeFecha_ValueChanged);
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.Window;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(93, 89);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(33, 18);
+            this.guna2HtmlLabel4.TabIndex = 13;
+            this.guna2HtmlLabel4.Text = "Hora";
+            this.guna2HtmlLabel4.Click += new System.EventHandler(this.guna2HtmlLabel4_Click);
             // 
-            // btnAgregar
+            // guna2HtmlLabel5
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregar.BorderRadius = 20;
-            this.btnAgregar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgregar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgregar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAgregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(93, 324);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(200, 52);
-            this.btnAgregar.TabIndex = 9;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.SystemColors.Window;
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(93, 179);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(41, 18);
+            this.guna2HtmlLabel5.TabIndex = 14;
+            this.guna2HtmlLabel5.Text = "Fecha";
             // 
-            // txtMotivo
+            // guna2HtmlLabel6
             // 
-            this.txtMotivo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMotivo.DefaultText = "";
-            this.txtMotivo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMotivo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMotivo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMotivo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMotivo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMotivo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMotivo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMotivo.Location = new System.Drawing.Point(372, 203);
-            this.txtMotivo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtMotivo.Name = "txtMotivo";
-            this.txtMotivo.PlaceholderText = "";
-            this.txtMotivo.SelectedText = "";
-            this.txtMotivo.Size = new System.Drawing.Size(281, 173);
-            this.txtMotivo.TabIndex = 10;
-            this.txtMotivo.TextChanged += new System.EventHandler(this.txtMotivo_TextChanged);
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.Window;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(372, 89);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(70, 18);
+            this.guna2HtmlLabel6.TabIndex = 15;
+            this.guna2HtmlLabel6.Text = "Consultorio";
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.ForeColor = System.Drawing.SystemColors.Window;
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(372, 179);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(43, 18);
+            this.guna2HtmlLabel7.TabIndex = 16;
+            this.guna2HtmlLabel7.Text = "Motivo";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.Window;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(372, 19);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(58, 18);
+            this.guna2HtmlLabel3.TabIndex = 17;
+            this.guna2HtmlLabel3.Text = "Doctores";
             // 
             // AgendarCita
             // 
@@ -224,6 +301,7 @@
             this.Text = "AgendarCita";
             this.Load += new System.EventHandler(this.AgendarCita_Load);
             this.guna2ContainerControl1.ResumeLayout(false);
+            this.guna2ContainerControl1.PerformLayout();
             this.guna2ContainerControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -243,5 +321,11 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker DateTimeFecha;
         private Guna.UI2.WinForms.Guna2Button btnAgregar;
         private Guna.UI2.WinForms.Guna2TextBox txtMotivo;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
 }
