@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.pnllateral_doctor = new Guna.UI2.WinForms.Guna2Panel();
+            this.Btn_historialmedio_doctor = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Vercitas_doctor = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Registrarpacientes_doctor = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Agendarcitas_doctor = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Verpacientes_doctor = new Guna.UI2.WinForms.Guna2Button();
             this.PnlCentral_Doctor = new Guna.UI2.WinForms.Guna2Panel();
             this.LblBienvenida_Doctor = new System.Windows.Forms.Label();
-            this.Btn_historialmedio_doctor = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_volver_doctor = new Guna.UI2.WinForms.Guna2Button();
             this.pnllateral_doctor.SuspendLayout();
             this.PnlCentral_Doctor.SuspendLayout();
@@ -53,6 +53,21 @@
             this.pnllateral_doctor.Name = "pnllateral_doctor";
             this.pnllateral_doctor.Size = new System.Drawing.Size(149, 458);
             this.pnllateral_doctor.TabIndex = 1;
+            // 
+            // Btn_historialmedio_doctor
+            // 
+            this.Btn_historialmedio_doctor.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.Btn_historialmedio_doctor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_historialmedio_doctor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_historialmedio_doctor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Btn_historialmedio_doctor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_historialmedio_doctor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Btn_historialmedio_doctor.ForeColor = System.Drawing.Color.White;
+            this.Btn_historialmedio_doctor.Location = new System.Drawing.Point(12, 339);
+            this.Btn_historialmedio_doctor.Name = "Btn_historialmedio_doctor";
+            this.Btn_historialmedio_doctor.Size = new System.Drawing.Size(127, 40);
+            this.Btn_historialmedio_doctor.TabIndex = 5;
+            this.Btn_historialmedio_doctor.Text = "Historial Medico";
             // 
             // Btn_Vercitas_doctor
             // 
@@ -97,6 +112,7 @@
             this.Btn_Agendarcitas_doctor.Size = new System.Drawing.Size(127, 36);
             this.Btn_Agendarcitas_doctor.TabIndex = 3;
             this.Btn_Agendarcitas_doctor.Text = "Agendar Citas";
+            this.Btn_Agendarcitas_doctor.Click += new System.EventHandler(this.Btn_Agendarcitas_doctor_Click);
             // 
             // Btn_Verpacientes_doctor
             // 
@@ -132,21 +148,6 @@
             this.LblBienvenida_Doctor.Size = new System.Drawing.Size(187, 37);
             this.LblBienvenida_Doctor.TabIndex = 0;
             this.LblBienvenida_Doctor.Text = "Hola Doctor";
-            // 
-            // Btn_historialmedio_doctor
-            // 
-            this.Btn_historialmedio_doctor.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Btn_historialmedio_doctor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_historialmedio_doctor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_historialmedio_doctor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Btn_historialmedio_doctor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_historialmedio_doctor.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Btn_historialmedio_doctor.ForeColor = System.Drawing.Color.White;
-            this.Btn_historialmedio_doctor.Location = new System.Drawing.Point(12, 339);
-            this.Btn_historialmedio_doctor.Name = "Btn_historialmedio_doctor";
-            this.Btn_historialmedio_doctor.Size = new System.Drawing.Size(127, 40);
-            this.Btn_historialmedio_doctor.TabIndex = 5;
-            this.Btn_historialmedio_doctor.Text = "Historial Medico";
             // 
             // Btn_volver_doctor
             // 

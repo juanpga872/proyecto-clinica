@@ -39,6 +39,13 @@ namespace proclinica
             Form menu = new Form_DoctorMenu();
             menu.Show();
         }
+
+        private void Btn_Agendarcitas_recepcionistas_Click(object sender, EventArgs e)
+        {
+            AgendarCita agendarCita = new AgendarCita();
+            agendarCita.Show();
+            this.Hide();
+        }
     }
 }
 

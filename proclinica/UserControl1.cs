@@ -33,52 +33,40 @@ namespace proclinica
             string usuario = correo_txt.Text;
             string contraseña = contraseña_txt.Text;
 
-            if (usuario == "admin" && contraseña == "1234")
+            var usuarioEncontrado = GestorUsuarios.ListaUsuarios
+                .FirstOrDefault(u => u.Usuario == usuario && u.Contraseña == contraseña);
+
+            if (usuarioEncontrado != null)
             {
                 MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                
-                Form formularioPrincipal = this.FindForm();
-                formularioPrincipal.Hide();
-
-                AdminMenu adminMenu = new AdminMenu();
-                adminMenu.Show();
-            }
-            if(usuario=="recepcionista" && contraseña == "1234")
-            {
-            
-                MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                GestorUsuarios.UsuarioActual = usuarioEncontrado;
 
                 this.Hide();
 
-                recepcionistas_mainmenu menu = new recepcionistas_mainmenu();
-
-         
-                menu.Show();
-            }
-            if (usuario == "doctor" && contraseña == "1234")
-            {
-                MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                this.Hide();
-
-                Form_DoctorMenu menu = new Form_DoctorMenu();
-                menu.Show();
-            }
-            if(usuario== "prueba" && contraseña == "1234")
-            {
-                MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide(); 
-
-                Form_prueba menuAdmin = new Form_prueba(); // Este será el "menú del super admin"
-                menuAdmin.Show();
-                return;
+                switch (usuarioEncontrado.Rol)
+                {
+                    case "Administrador":
+                        new AdminMenu().Show();
+                        break;
+                    case "Recepcionista":
+                        new recepcionistas_mainmenu().Show();
+                        break;
+                    case "Doctor":
+                        new Form_DoctorMenu().Show();
+                        break;
+                    default:
+                        MessageBox.Show("Rol no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Show();
+                        break;
+                }
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+    
 
         public void guna2TextBox1_OnTextChanged(object sender, EventArgs e)
         {
