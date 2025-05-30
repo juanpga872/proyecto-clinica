@@ -29,3 +29,5 @@ C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.Form
 C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.Form_VerPacientes.resources
 C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.Form_VerRecepcionistas.resources
 C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.recepcionistas_mainmenu.resources
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.VerCitas.resources
+C:\Users\HOME\Source\Repos\proyecto-clinica\proclinica\obj\Debug\proclinica.HistorialPaciente.resources

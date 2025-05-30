@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.btnAgendarCita = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.btnVerDoctores = new Guna.UI2.WinForms.Guna2Button();
@@ -38,6 +39,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnHistorial = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ContainerControl1.SuspendLayout();
             this.guna2ContainerControl2.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +47,8 @@
             // guna2ContainerControl1
             // 
             this.guna2ContainerControl1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2ContainerControl1.Controls.Add(this.btnHistorial);
+            this.guna2ContainerControl1.Controls.Add(this.guna2Button3);
             this.guna2ContainerControl1.Controls.Add(this.btnAgendarCita);
             this.guna2ContainerControl1.Controls.Add(this.guna2Button7);
             this.guna2ContainerControl1.Controls.Add(this.btnVerDoctores);
@@ -59,6 +63,22 @@
             this.guna2ContainerControl1.TabIndex = 0;
             this.guna2ContainerControl1.Text = "guna2ContainerControl1";
             // 
+            // guna2Button3
+            // 
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button3.Location = new System.Drawing.Point(0, 413);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(220, 63);
+            this.guna2Button3.TabIndex = 8;
+            this.guna2Button3.Text = "Ver Recepcionista";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
             // btnAgendarCita
             // 
             this.btnAgendarCita.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -68,7 +88,7 @@
             this.btnAgendarCita.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnAgendarCita.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAgendarCita.ForeColor = System.Drawing.Color.Black;
-            this.btnAgendarCita.Location = new System.Drawing.Point(0, 164);
+            this.btnAgendarCita.Location = new System.Drawing.Point(0, 119);
             this.btnAgendarCita.Name = "btnAgendarCita";
             this.btnAgendarCita.Size = new System.Drawing.Size(220, 63);
             this.btnAgendarCita.TabIndex = 7;
@@ -84,11 +104,12 @@
             this.guna2Button7.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button7.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 401);
+            this.guna2Button7.Location = new System.Drawing.Point(0, 353);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.Size = new System.Drawing.Size(220, 63);
             this.guna2Button7.TabIndex = 6;
             this.guna2Button7.Text = "Registrar secretarios";
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // btnVerDoctores
             // 
@@ -99,9 +120,9 @@
             this.btnVerDoctores.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnVerDoctores.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnVerDoctores.ForeColor = System.Drawing.Color.Black;
-            this.btnVerDoctores.Location = new System.Drawing.Point(0, 342);
+            this.btnVerDoctores.Location = new System.Drawing.Point(-3, 293);
             this.btnVerDoctores.Name = "btnVerDoctores";
-            this.btnVerDoctores.Size = new System.Drawing.Size(220, 63);
+            this.btnVerDoctores.Size = new System.Drawing.Size(223, 63);
             this.btnVerDoctores.TabIndex = 5;
             this.btnVerDoctores.Text = "Ver Doctores";
             this.btnVerDoctores.Click += new System.EventHandler(this.btnVerDoctores_Click);
@@ -115,7 +136,7 @@
             this.btnRegistraDoctores.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnRegistraDoctores.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRegistraDoctores.ForeColor = System.Drawing.Color.Black;
-            this.btnRegistraDoctores.Location = new System.Drawing.Point(0, 282);
+            this.btnRegistraDoctores.Location = new System.Drawing.Point(0, 233);
             this.btnRegistraDoctores.Name = "btnRegistraDoctores";
             this.btnRegistraDoctores.Size = new System.Drawing.Size(220, 63);
             this.btnRegistraDoctores.TabIndex = 4;
@@ -131,11 +152,12 @@
             this.btnVerCita.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnVerCita.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnVerCita.ForeColor = System.Drawing.Color.Black;
-            this.btnVerCita.Location = new System.Drawing.Point(0, 223);
+            this.btnVerCita.Location = new System.Drawing.Point(0, 178);
             this.btnVerCita.Name = "btnVerCita";
             this.btnVerCita.Size = new System.Drawing.Size(220, 63);
             this.btnVerCita.TabIndex = 3;
             this.btnVerCita.Text = "Ver citas";
+            this.btnVerCita.Click += new System.EventHandler(this.btnVerCita_Click);
             // 
             // guna2Button2
             // 
@@ -146,11 +168,12 @@
             this.guna2Button2.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 104);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 61);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(220, 63);
             this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Ver Pacients";
+            this.guna2Button2.Text = "Ver Pacientes";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -161,11 +184,12 @@
             this.guna2Button1.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 44);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 3);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(220, 63);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Registrar Pacientes";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2ContainerControl2
             // 
@@ -188,6 +212,22 @@
             this.guna2HtmlLabel1.Text = "Hola\r\n Super Administrador\r\n";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // btnHistorial
+            // 
+            this.btnHistorial.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHistorial.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHistorial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHistorial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHistorial.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnHistorial.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHistorial.ForeColor = System.Drawing.Color.Black;
+            this.btnHistorial.Location = new System.Drawing.Point(0, 471);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.Size = new System.Drawing.Size(220, 63);
+            this.btnHistorial.TabIndex = 9;
+            this.btnHistorial.Text = "Historial";
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
+            // 
             // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -198,6 +238,7 @@
             this.Controls.Add(this.guna2ContainerControl1);
             this.Name = "AdminMenu";
             this.Text = "AdminMenu";
+            this.Load += new System.EventHandler(this.AdminMenu_Load);
             this.guna2ContainerControl1.ResumeLayout(false);
             this.guna2ContainerControl2.ResumeLayout(false);
             this.guna2ContainerControl2.PerformLayout();
@@ -217,5 +258,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btnAgendarCita;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnHistorial;
     }
 }
