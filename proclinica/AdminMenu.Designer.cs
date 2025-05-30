@@ -44,6 +44,7 @@
 =======
             this.btnHistorial = new Guna.UI2.WinForms.Guna2Button();
 >>>>>>> juanpablo/clinic-app
+            this.btnHistorial = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ContainerControl1.SuspendLayout();
             this.guna2ContainerControl2.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +58,8 @@
             this.guna2ContainerControl1.Controls.Add(this.btnHistorial);
             this.guna2ContainerControl1.Controls.Add(this.guna2Button3);
 >>>>>>> juanpablo/clinic-app
+            this.guna2ContainerControl1.Controls.Add(this.btnHistorial);
+            this.guna2ContainerControl1.Controls.Add(this.guna2Button3);
             this.guna2ContainerControl1.Controls.Add(this.btnAgendarCita);
             this.guna2ContainerControl1.Controls.Add(this.Btnregistrarsecretarios_admin);
             this.guna2ContainerControl1.Controls.Add(this.btnVerDoctores);
@@ -103,6 +106,7 @@
 =======
             this.btnAgendarCita.Location = new System.Drawing.Point(0, 119);
 >>>>>>> juanpablo/clinic-app
+            this.btnAgendarCita.Location = new System.Drawing.Point(0, 119);
             this.btnAgendarCita.Name = "btnAgendarCita";
             this.btnAgendarCita.Size = new System.Drawing.Size(165, 51);
             this.btnAgendarCita.TabIndex = 7;
@@ -141,6 +145,7 @@
             this.guna2Button7.Text = "Registrar secretarios";
             this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
 >>>>>>> juanpablo/clinic-app
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // btnVerDoctores
             // 
@@ -154,6 +159,7 @@
 <<<<<<< HEAD
             this.btnVerDoctores.Location = new System.Drawing.Point(0, 278);
             this.btnVerDoctores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVerDoctores.Location = new System.Drawing.Point(-3, 293);
             this.btnVerDoctores.Name = "btnVerDoctores";
             this.btnVerDoctores.Size = new System.Drawing.Size(165, 51);
 =======
@@ -161,6 +167,7 @@
             this.btnVerDoctores.Name = "btnVerDoctores";
             this.btnVerDoctores.Size = new System.Drawing.Size(223, 63);
 >>>>>>> juanpablo/clinic-app
+            this.btnVerDoctores.Size = new System.Drawing.Size(223, 63);
             this.btnVerDoctores.TabIndex = 5;
             this.btnVerDoctores.Text = "Ver Doctores";
             this.btnVerDoctores.Click += new System.EventHandler(this.btnVerDoctores_Click);
@@ -180,6 +187,7 @@
 =======
             this.btnRegistraDoctores.Location = new System.Drawing.Point(0, 233);
 >>>>>>> juanpablo/clinic-app
+            this.btnRegistraDoctores.Location = new System.Drawing.Point(0, 233);
             this.btnRegistraDoctores.Name = "btnRegistraDoctores";
             this.btnRegistraDoctores.Size = new System.Drawing.Size(165, 51);
             this.btnRegistraDoctores.TabIndex = 4;
@@ -201,6 +209,7 @@
 =======
             this.btnVerCita.Location = new System.Drawing.Point(0, 178);
 >>>>>>> juanpablo/clinic-app
+            this.btnVerCita.Location = new System.Drawing.Point(0, 178);
             this.btnVerCita.Name = "btnVerCita";
             this.btnVerCita.Size = new System.Drawing.Size(165, 51);
             this.btnVerCita.TabIndex = 3;
@@ -239,6 +248,8 @@
             this.guna2Button2.Text = "Ver Pacientes";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
 >>>>>>> juanpablo/clinic-app
+            this.guna2Button2.Text = "Ver Pacientes";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // btn_registrarpacientes_admin
             // 
@@ -272,6 +283,7 @@
             this.guna2Button1.Text = "Registrar Pacientes";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
 >>>>>>> juanpablo/clinic-app
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2ContainerControl2
             // 
@@ -331,6 +343,22 @@
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
 >>>>>>> juanpablo/clinic-app
             // 
+            // btnHistorial
+            // 
+            this.btnHistorial.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHistorial.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHistorial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHistorial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHistorial.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnHistorial.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHistorial.ForeColor = System.Drawing.Color.Black;
+            this.btnHistorial.Location = new System.Drawing.Point(0, 471);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.Size = new System.Drawing.Size(220, 63);
+            this.btnHistorial.TabIndex = 9;
+            this.btnHistorial.Text = "Historial";
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
+            // 
             // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,5 +396,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button btnHistorial;
 >>>>>>> juanpablo/clinic-app
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnHistorial;
     }
 }

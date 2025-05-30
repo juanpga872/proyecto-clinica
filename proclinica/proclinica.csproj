@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +63,12 @@
     <Compile Include="BaseDatosSimulada.cs" />
     <Compile Include="Cita.cs" />
     <Compile Include="Doctor.cs" />
+    <Compile Include="HistorialPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialPaciente.Designer.cs">
+      <DependentUpon>HistorialPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestorUsuarios.cs" />
     <Compile Include="RegistroDoctores.cs">
       <SubType>Form</SubType>
@@ -122,6 +127,12 @@
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerCitas.Designer.cs">
+      <DependentUpon>VerCitas.cs</DependentUpon>
+    </Compile>
     <Compile Include="VerDoctores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +147,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgendarCita.resx">
       <DependentUpon>AgendarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroDoctores.resx">
+      <DependentUpon>RegistroDoctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DoctorMenu.resx"/>
+    <EmbeddedResource Include="HistorialPaciente.resx">
+      <DependentUpon>HistorialPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroDoctores.resx">
       <DependentUpon>RegistroDoctores.cs</DependentUpon>
@@ -163,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerCitas.resx">
+      <DependentUpon>VerCitas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerDoctores.resx">
       <DependentUpon>VerDoctores.cs</DependentUpon>
